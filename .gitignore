@@ -10,6 +10,13 @@
 demo-material/fitko/
 demo-material/fitko-text/
 
+# Foliendateien bleiben lokal — nur der PDF-Export kommt später ins Repo
+*.pptx
+*.ppt
+*.key
+*.odp
+# (PDF ist NICHT ignoriert; folien.pdf o.ä. kann eingecheckt werden)
+
 # Ephemere Logs/Statusdateien aus Batch-Läufen
 demo-material/**/_batch.*
 demo-material/**/_halluzination-hunt.log
