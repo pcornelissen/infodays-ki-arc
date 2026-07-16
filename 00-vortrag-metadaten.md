@@ -5,7 +5,7 @@
 - **Titel:** Architekturarbeit mit lokalen und EU-gehosteten LLMs: ein Praxisbericht
 - **Termin:** Dienstag, 06.10.2026, 11:00–11:25 Uhr
 - **Rahmen:** InfoDays Software Architektur
-- **Format:** Fast Lane — 20 Min Vortrag + 5 Min Q&A
+- **Format:** Fast Lane — 25 Min Slot: 20 Min Vortrag + 5 Min Q&A
 - **Modus:** Online, Screenshare oder aufbereitete Beispiele möglich
 - **Konferenzmanager:** Fabian Helms
 - **Sprache:** de-formal
