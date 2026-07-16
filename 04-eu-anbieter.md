@@ -45,6 +45,8 @@ Es gibt zwei Kategorien, die man **nicht vermischen darf**:
 - Eigenes RZ Bruyères-le-Châtel, 13.800 GB300, 44 MW (seit Q2 2026)
 - **Einziger Frontier-fähiger Provider mit End-to-End-EU-Residency**
 - Mistral Large 3, Codestral, Pixtral, Magistral, Ministral. Fine-Tuning EU-resident
+- **EU-Data-Residency by default** in allen Tarifen (Free/Experiment, Scale/PAYG, Enterprise) — nicht nur im Enterprise-Angebot. GDPR eingebaut, keine Datenabflüsse aus EU
+- **Free-Tier („Experiment") ohne Kreditkarte**, rate-limited, alle Modelle inkl. Mistral Large. Für Prototyping mehr als ausreichend. Kein separater Trial-mit-Credits — wer skalieren will, geht direkt in Scale (PAYG, $2/$6 pro Mio Tokens I/O für Mistral Large)
 
 **OVHcloud AI Endpoints** (Roubaix)
 - Serverless, 40+ Open-Source-Modelle, französisches Recht, SecNumCloud-Kontext
@@ -78,12 +80,11 @@ Der Aufhänger dazu: **„Wenn Frontier-Qualität nötig ist, gibt es in DE aktu
 
 ## Konsequenz für die Aufbereitungs-Frage
 
-Für das FITKO-Kondensat (siehe [03-demo-fragen.md](03-demo-fragen.md)) brauchen wir Frontier-Qualität und EU-Residency.
+Für das FITKO-Kondensat (siehe [03-demo-fragen.md](03-demo-fragen.md)) brauchen wir gute Zusammenfassungs- und Widerspruchserkennungs-Qualität sowie EU-Residency.
 
-**Meine klare Empfehlung: Mistral la Plateforme.**
-- Frontier-Klasse, echte Trade-off- und Widerspruchserkennung
-- EU-Jurisdiktion, sauber
-- Kontextlänge ausreichend
-- Meta-schön: Aufbereitung mit dem einzigen echten EU-Frontier-Anbieter, Demo mit lokalem Mistral kleinerer Klasse (Kontinuität in der Modell-Familie, unterschiedliche Größenordnungen — das ist eine gute Erzählung)
+**Vorgehen in zwei Schritten:**
 
-Zweite Wahl: **Stackit mit Llama 3.3 70B** — bleibt näher am Hauptbeispiel, verzichtet aber auf Frontier-Klasse. Realistisch: für ein 49-Dateien-Kondensat wahrscheinlich zu schwach.
+1. **Erst Stackit probieren** (bereits laufender Server bei uns). Wenn ein Open-Weight-Modell der 70B-Klasse dort die Widerspruchserkennung sauber hinkriegt, bleiben wir bei Stackit — konsistenter Vortrag, ein Anbieter durchgezogen, kein zusätzliches Konto nötig.
+2. **Falls Qualität nicht reicht:** Mistral la Plateforme, Free-Tier oder Scale/PAYG. EU-Data-Residency ist by default gegeben (nicht Enterprise-only), Konto in Minuten angelegt, Frontier-Klasse verfügbar. Kosten für unser Kondensat in PAYG grob geschätzt einstellig USD.
+
+**Meta-Nutzen für den Vortrag:** Der Zwei-Schritte-Ansatz ist selbst eine Illustration des Grundprinzips — „das stärkste Modell wählen, das der Schutzbedarf zulässt, und iterativ hochstufen, wenn's nicht reicht". Das ist genauso vermittelbar wie das Ergebnis.

@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Original-Vergabeunterlagen (FITKO CXP4DM2MNHA) — NICHT im öffentlichen Repo.
+# Diese sind zwar per §41 VgV frei abrufbar, aber Wiederveröffentlichung
+# ist nicht durch den Vortragskontext gedeckt. Zieht euch die PDFs selbst
+# mit `scripts/download-fitko.sh` vom DTVP.
+demo-material/fitko/
+demo-material/fitko-text/
+
+# Ephemere Logs/Statusdateien aus Batch-Läufen
+demo-material/**/_batch.*
+demo-material/**/_halluzination-hunt.log
+demo-material/**/_tmp-*.md
+videos/_record.log
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc

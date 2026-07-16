@@ -72,14 +72,28 @@ Das ist auch ein Meta-Bonus für den Vortrag: **KI bereitet den Kontext für KI 
 - Macht die Aussage „die Arbeit liegt in der Kontext-Aufbereitung" konkret
 - Der Review-Schritt macht die Verantwortung des Architekten sichtbar — genau der Punkt aus Block 6
 
-## Aufnahme-Todos
+## Produktions-Todos (das echte Kondensat)
 
-- [ ] Aufbereitungs-Modell festlegen (Vorschlag: Stackit-gehostetes Frontier-Modell)
-- [ ] PDF→Text-Konvertierung mit Werkzeug festnageln
-- [ ] Template für Pro-Dokument-Kondensat schreiben
-- [ ] Kondensat für die 49 FITKO-Dateien erzeugen
-- [ ] Master-Dokument mergen und reviewen
-- [ ] Demo-Modell auswählen: Mistral (aktuell lokal), Qwen als Vergleich
+- [x] Aufbereitungs-Modell festgelegt: **Qwen3-VL-235B-A22B-Instruct-FP8** auf Stackit
+- [x] PDF→Text-Konvertierung festgelegt: `pdftotext -layout` (Poppler)
+- [x] Template geschrieben und an zwei Dokumenten getestet
+- [x] Kondensat für alle 30 FITKO-PDFs erzeugt
+- [x] Master-Dokument aus Einzelkondensaten synthetisiert
+- [x] Vier Fragen (F1–F4) formuliert und je gegen `kondensat` + `master` durchgespielt
+- [x] Roh-Modus bewusst als 400-Fail dokumentiert (Kontextfenster überschritten)
+- [ ] Antworten inhaltlich sichten und für jede Frage entscheiden: welcher Modus liefert den stärksten Aha-Effekt für den Vortrag?
+- [ ] Demo-Modell lokal auswählen: Mistral (aktuell), Qwen kleiner (Kontinuität zur Aufbereitung)
+
+## Aufnahme-Todos (das Video)
+
+Alle Schritte müssen für den Vortrag aufgenommen werden. Das Produktions-Kondensat oben nutzen wir für die spätere Master-Analyse; für die eigentliche Video-Demo werden die relevanten Schritte separat gefilmt.
+
+- [ ] Aufnahme 1: `condense.sh` auf einem einzelnen Dokument (Leistungsbeschreibung) — zeigt die Bühne (Zeitmarken, Modell-Namen)
+- [ ] Aufnahme 2: die `for`-Schleife über alle PDFs — im Zeitraffer schön anzusehen
+- [ ] Aufnahme 3: Master-Merge / Analyse-Prompt auf dem Kondensat — der eigentliche Wert
+- [ ] Aufnahme 4a: F1 oder F2 (siehe oben) — roh vs. aufbereitet
+- [ ] Aufnahme 4b: F3 oder F4 — roh vs. aufbereitet
+- [ ] Sichten, straffen, im Video-Playback auf sinnvolle Geschwindigkeit bringen (Zeitmarken bleiben lesbar)
 - [ ] F1 aufnehmen: roh
 - [ ] F1 aufnehmen: aufbereitet
 - [ ] F2 aufnehmen: roh
