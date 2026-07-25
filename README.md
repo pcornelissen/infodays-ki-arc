@@ -99,6 +99,10 @@ Details in [`README-vortrag.md`](README-vortrag.md).
 
 Bühnenaufnahmen der CLI-Interaktionen liegen in [`videos/`](videos/) mit Index in [`videos/README.md`](videos/README.md).
 
+## Weiterführend
+
+- **CaSE Podcast, Episode 62** — *„Agent Harness, State of Play, Risk and AI Company Culture"* mit Birgitta, Heinrich und Sven vom Utah Retreat. Bringt den Kernpunkt dieses Vortrags („die Arbeit liegt im Kontext") als **Context Engineering: The Real Lever** unabhängig auf den Punkt. [Episode](https://www.case-podcast.org/62-utah-retreat-insights-and-state-of-play-ai-assisted-development)
+
 ## Lizenz / Nutzung
 
 Vortragsmaterial: © Patrick Cornelißen / Atvantage.

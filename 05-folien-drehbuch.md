@@ -126,6 +126,7 @@ Unter der letzten Box, kleiner: **In DE gibt es aktuell keinen 1:1-Frontier-Ersa
 
 **Speaker Notes (~45 s):**
 - Diesen Satz betont vorlesen
+- Kurzer Legitimations-Verweis: „Das ist keine Nischenbeobachtung — die CaSE-Podcast-Episode ‚Agent Harness, State of Play, Risk and AI Company Culture' bringt genau denselben Punkt als **Context Engineering: The Real Lever** auf den Punkt."
 - Zum nächsten Teil überleiten: „Ich zeige das an einer echten öffentlichen Ausschreibung."
 - Kurz FITKO-Vergabe einordnen: 30 Vergabedokumente, Rahmenvertrag Projekt-/Produktberatung, 254 Mio €, 8 Fachdisziplinen inklusive Enterprise-Architektur und Software-Engineering
 
@@ -329,6 +330,9 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 - GitHub-Repo (Link einfügen, sobald public)
 - Enthält Skripte, Prompts, Kondensate, Antworten und die Videos
 - Original-PDFs zieht man selbst mit `./scripts/download-fitko.sh`
+
+**Weiterführend**
+- CaSE Podcast, Episode 62 — *„Agent Harness, State of Play, Risk and AI Company Culture"* (case-podcast.org)
 
 **Am Ende:** *Fragen?*
 
