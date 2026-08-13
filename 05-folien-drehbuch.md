@@ -11,7 +11,7 @@ Für die Umsetzung in PowerPoint. Zielgruppe: Software-Architekt:innen im Live-V
 - **Video-Folien** enthalten keinen Text neben dem eingebetteten Video, nur den Video-Titel. Der Sprecher spricht live drüber
 - Alle Sprecher-Notizen unter „Speaker Notes" gehen in das Notizenfeld der jeweiligen Folie
 
-**Gesamt: 18 Folien für 20 Min = ~65 s pro Folie im Schnitt.**
+**Gesamt: 19 Folien für 20 Min = ~63 s pro Folie im Schnitt.**
 
 ---
 
@@ -46,15 +46,13 @@ Für die Umsetzung in PowerPoint. Zielgruppe: Software-Architekt:innen im Live-V
 
 ## Folie 3 — Wer da vorne redet
 
-**Layout:** Titel + drei kurze Zeilen, evtl. rechts kleines Bild
+**Layout:** Titel + zwei kurze Zeilen
 **Inhalt:**
-- 25+ Jahre Software-Architekt · Azure- und AWS-zertifiziert
-- Bei Atvantage: Schwerpunkt digitale Souveränität
-- Was du hörst, ist **ehrlicher Zwischenstand** aus laufender Praxis — kein abgeschlossener Erfahrungsbericht
+- 25+ Jahre Software-Architekt · Bei Atvantage: Schwerpunkt digitale Souveränität
+- Was du hörst, ist **ehrlicher Zwischenstand** aus laufender Praxis
 
-**Speaker Notes (~40 s):**
-- 30 Sekunden zur Person, nicht mehr
-- Betonen: nutze die genannten Setups selbst, jeden Tag
+**Speaker Notes (~25 s):**
+- Kurz zur Person, nutze die Setups selbst
 - Ehrlichkeit vor Vollständigkeit — auch die Grenzen sitzen im Vortrag
 
 ---
@@ -239,7 +237,32 @@ Definiert Leistungsumfang, Rollen und Zusammenarbeit.
 
 ---
 
-## Folie 14 — Fallstricke — und wie man sie umgeht
+## Folie 14 — Dasselbe Prinzip für Code: Understand-Anything
+
+**Layout:** Titel + zwei-Spalten. Links: kurzer Text. Rechts: ein Bild oder simple Graph-Skizze (Knoten/Kanten)
+**Inhalt (links, Text):**
+
+**Wir haben's für Vergabe-PDFs gebaut.**
+**Dasselbe Prinzip trägt für Code.**
+
+- Aus einer Codebase entsteht ein **Knowledge Graph**: Dateien, Klassen, Funktionen, Import-Beziehungen, Architektur-Layer, Business-Domänen
+- KI (und Mensch) haben dann **strukturierten, navigierbaren Kontext** statt Wildwuchs-Repository
+- Anwendungen: Onboarding, Diff-Review, Domänen-Explanation, Architektur-Karte
+
+**Rechts (Graph-Skizze):** Ein paar Knoten (Files / Klassen), gerichtete Kanten (imports / calls), gruppiert in Layer-Boxen (Domain / Application / Infrastructure). Nicht ausgearbeitet — nur symbolisch.
+
+Untertitel unten: **Understand-Anything — genauso wie hier: aus roher Materie ein Kondensat, das die KI trägt.**
+
+**Speaker Notes (~75 s):**
+- Kernaussage explizit machen: „Was ich heute an Vergabeunterlagen gezeigt habe, ist kein Sonderfall. Es ist ein Muster."
+- Understand-Anything als konkretes Werkzeug: „Für Code gibt es das schon fertig als Skill — man kippt eine Codebase rein, bekommt einen navigierbaren Knowledge Graph mit Architektur-Layern, Import-Beziehungen und Business-Domänen zurück."
+- Konkrete Sub-Skills nennen: understand, understand-diff, understand-onboard, understand-domain — deckt Alltagsfragen ab
+- Kurze Andockung: „Ich nutze das selbst, wenn ich in eine unbekannte Codebase reinmuss. Das Prinzip ist dasselbe wie heute — nur ist die Rohmaterie Code statt PDFs."
+- **Souveränitäts-Bogen schließen:** „Understand-Anything ist ein Skill — mit einem Coding-Harness betrieben, der eigengehostete LLMs versteht, lässt sich das komplett auf souveräner Infrastruktur fahren. Also nicht ‚KI-Souveränität nur für Vergabeanalyse', sondern auch für Alltagsarbeit am Code."
+
+---
+
+## Folie 15 — Fallstricke — und wie man sie umgeht
 
 **Layout:** Tabelle (dreispaltig): Fallstrick / Was passiert / Gegenmittel
 **Inhalt:**
@@ -261,7 +284,7 @@ Untertitel: **Fast alles ist mit Prompt-Disziplin lösbar. Harte Grenze: Modellg
 
 ---
 
-## Folie 15 — Video: Lokale Modelle — 8B vs. 14B (Szenen 04 + 05)
+## Folie 16 — Video: Lokale Modelle — 8B vs. 14B (Szenen 04 + 05)
 
 **Layout:** Zwei Videos nebeneinander oder Split-Screen
 **Inhalt:**
@@ -276,7 +299,7 @@ Untertitel: **Fast alles ist mit Prompt-Disziplin lösbar. Harte Grenze: Modellg
 
 ---
 
-## Folie 16 — Halluzinationen live gefangen
+## Folie 17 — Halluzinationen live gefangen
 
 **Layout:** Titel + Code-Screenshot mit sichtbar rot hervorgehobenen Halluzinationen
 **Inhalt (Ausschnitt aus [demo-material/antworten/f1-…__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md)):**
@@ -300,7 +323,7 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 
 ---
 
-## Folie 17 — Was du mitnimmst
+## Folie 18 — Was du mitnimmst
 
 **Layout:** Titel + 4 klare Punkte, große Typografie
 **Inhalt:**
@@ -316,7 +339,7 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 
 ---
 
-## Folie 18 — Kontakt & weiterführend
+## Folie 19 — Kontakt & weiterführend
 
 **Layout:** Titel + zwei Blöcke (Kontakt / Repo)
 **Inhalt:**
@@ -350,27 +373,28 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 |---|---|---|---|---|
 | 1 | Titel | 30 s | — | 0:30 |
 | 2 | Aufhänger | 45 s | — | 1:15 |
-| 3 | Wer da vorne redet | 40 s | — | 1:55 |
-| 4 | Baseline | 60 s | — | 2:55 |
-| 5 | Entscheidungsraster | 75 s | — | 4:10 |
-| 6 | Ökosystem-Anbieter | 75 s | — | 5:25 |
-| 7 | Übergang: Kontext ist die Arbeit | 45 s | — | 6:10 |
-| 8 | Video: raw-fail | 50 s | ~5 s | 7:05 |
-| 9 | Deshalb strukturieren | 60 s | — | 8:05 |
-| 10 | Video: condense-single | 60 s | ~20 s | 9:25 |
-| 11 | Kondensat-Struktur | 50 s | — | 10:15 |
-| 12 | Video: ask-master | 65 s | ~25 s | 11:45 |
-| 13 | Harte Funde | 75 s | — | 13:00 |
-| 14 | Fallstricke-Tabelle | 70 s | — | 14:10 |
-| 15 | Video: 8b vs. 14b | 65 s | ~60 s Zeitraffer | 16:15 |
-| 16 | Halluzinationen live gefangen | 60 s | — | 17:15 |
-| 17 | Take-aways | 45 s | — | 18:00 |
-| 18 | Kontakt | 30 s | — | 18:30 |
+| 3 | Wer da vorne redet | 25 s | — | 1:40 |
+| 4 | Baseline | 60 s | — | 2:40 |
+| 5 | Entscheidungsraster | 75 s | — | 3:55 |
+| 6 | Ökosystem-Anbieter | 75 s | — | 5:10 |
+| 7 | Übergang: Kontext ist die Arbeit | 45 s | — | 5:55 |
+| 8 | Video: raw-fail | 50 s | ~5 s | 6:50 |
+| 9 | Deshalb strukturieren | 60 s | — | 7:50 |
+| 10 | Video: condense-single | 60 s | ~20 s | 9:10 |
+| 11 | Kondensat-Struktur | 50 s | — | 10:00 |
+| 12 | Video: ask-master | 65 s | ~25 s | 11:30 |
+| 13 | Harte Funde | 75 s | — | 12:45 |
+| 14 | **Prinzip für Code: Understand-Anything** | 75 s | — | 14:00 |
+| 15 | Fallstricke-Tabelle | 70 s | — | 15:10 |
+| 16 | Video: 8b vs. 14b | 65 s | ~60 s Zeitraffer | 17:15 |
+| 17 | Halluzinationen live gefangen | 60 s | — | 18:15 |
+| 18 | Take-aways | 45 s | — | 19:00 |
+| 19 | Kontakt | 30 s | — | 19:30 |
 
-**Ergebnis: ~18:30 Vortrag + 1:30 Puffer für Übergänge, Nachdenken, atmen → passt in die 20 Min.**
+**Ergebnis: ~19:30 Vortrag + 0:30 Puffer → passt gerade in die 20 Min. Wenig Reserve, dafür ist die neue Folie 14 drin.**
 
 Wenn's eng wird, kürzt du in dieser Reihenfolge:
-1. Folie 3 (Wer da vorne redet) — reicht als Nebensatz auf Folie 1
+1. Folie 15 (Fallstricke-Tabelle) — kurzer mündlicher Verweis reicht
 2. Folie 9 (Deshalb strukturieren) — mündlich neben Video 8 einbauen
 3. Folie 11 (Kondensat-Struktur) — mündlich neben Video 10 abhandeln
 
@@ -388,7 +412,8 @@ Wenn's eng wird, kürzt du in dieser Reihenfolge:
 | 11 | [demo-material/fitko-kondensat/1_Leistungsbeschreibung_v.1.0.md](demo-material/fitko-kondensat/1_Leistungsbeschreibung_v.1.0.md) |
 | 12 | [videos/02-ask-master.mov](videos/02-ask-master.mov) |
 | 13 | [demo-material/fitko-master.md](demo-material/fitko-master.md), [demo-material/antworten/f3-widersprueche__kondensat.md](demo-material/antworten/f3-widersprueche__kondensat.md) |
-| 14 | [01-talking-points.md](01-talking-points.md) Block 5 |
-| 15 | [videos/04-ask-local-8b.mov](videos/04-ask-local-8b.mov), [videos/05-ask-local-14b.mov](videos/05-ask-local-14b.mov) |
-| 16 | [demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md) |
-| 17 | [01-talking-points.md](01-talking-points.md) Block 6 |
+| 14 | Understand-Anything (Skill) — mit einem Coding-Harness gegen eigengehostete LLMs betreibbar |
+| 15 | [01-talking-points.md](01-talking-points.md) Block 5 |
+| 16 | [videos/04-ask-local-8b.mov](videos/04-ask-local-8b.mov), [videos/05-ask-local-14b.mov](videos/05-ask-local-14b.mov) |
+| 17 | [demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md) |
+| 18 | [01-talking-points.md](01-talking-points.md) Block 6 |
