@@ -102,6 +102,8 @@ Bühnenaufnahmen der CLI-Interaktionen liegen in [`videos/`](videos/) mit Index 
 ## Weiterführend
 
 - **CaSE Podcast, Episode 62** — *„Agent Harness, State of Play, Risk and AI Company Culture"* mit Birgitta, Heinrich und Sven vom Utah Retreat. Bringt den Kernpunkt dieses Vortrags („die Arbeit liegt im Kontext") als **Context Engineering: The Real Lever** unabhängig auf den Punkt. [Episode](https://www.case-podcast.org/62-utah-retreat-insights-and-state-of-play-ai-assisted-development)
+- **arc42 Skill** — dieselbe Kondensations-Idee auf Architekturdokumentation angewandt: klar strukturierte Sicht, aus der eine KI (oder ein Mensch) tragfähige Aussagen ableiten kann.
+- **Understand-Anything** — dasselbe Prinzip für Code: erzeugt aus einer Codebase einen Knowledge Graph (Architekturlayer, Dateien, Beziehungen), mit dem die KI dann sinnvoll arbeiten kann. Der Ansatz spiegelt eins-zu-eins die Idee dieses Vortrags — nur auf Sourcecode statt Vergabeunterlagen.
 
 ## Lizenz / Nutzung
 

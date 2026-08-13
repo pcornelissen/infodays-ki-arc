@@ -333,6 +333,8 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 
 **Weiterführend**
 - CaSE Podcast, Episode 62 — *„Agent Harness, State of Play, Risk and AI Company Culture"* (case-podcast.org)
+- **arc42** Skill — dieselbe Kondensations-Idee für Architekturdokumentation
+- **Understand-Anything** — dasselbe Prinzip für Code: Knowledge Graph aus einer Codebase, mit dem die KI dann arbeitet
 
 **Am Ende:** *Fragen?*
 
