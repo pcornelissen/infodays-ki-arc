@@ -6,12 +6,12 @@ Für die Umsetzung in PowerPoint. Zielgruppe: Software-Architekt:innen im Live-V
 **Design-Prinzipien:**
 - 16:9, hoher Kontrast (Vortrag wird per Zoom o.ä. übertragen, Kompression schluckt Kleinteiliges)
 - Große Typografie, wenig Text pro Folie
-- Konsistentes Farbschema: eine Akzentfarbe für „souverän/EU", eine für „nicht-souverän/US" — zur Wiedererkennung im Entscheidungsraster
+- Konsistentes Farbschema: eine Akzentfarbe für „souverän/EU", eine für „nicht-souverän/US"
 - Keine Bulletpoint-Wüsten. Wenn eine Aussage die Folie trägt, ist sie eine einzelne Zeile
-- **Video-Folien** enthalten keinen Text neben dem eingebetteten Video, nur den Video-Titel. Der Sprecher spricht live drüber
-- Alle Sprecher-Notizen unter „Speaker Notes" gehen in das Notizenfeld der jeweiligen Folie
+- **Video-Folien** enthalten Video + kurzen Prompt-/Frage-Auszug zum Nebendran-Erklären. Sprecher spricht live drüber
+- Alle Sprecher-Notizen gehen in das Notizenfeld der jeweiligen Folie
 
-**Gesamt: 19 Folien für 20 Min = ~63 s pro Folie im Schnitt.**
+**Gesamt: 21 Folien für 20 Min = ~57 s pro Folie im Schnitt.**
 
 ---
 
@@ -65,7 +65,7 @@ Für die Umsetzung in PowerPoint. Zielgruppe: Software-Architekt:innen im Live-V
 
 **Speaker Notes (~60 s):**
 - Frame für den ganzen Vortrag: KI vs. Mensch unter Zeitdruck, nicht KI vs. Perfektion
-- Kurze Vignette aus eigener Praxis: zwei Ausschreibungen in den letzten 12 Monaten, KI zum Zusammenfassen genutzt — nicht falscher als ich selbst, aber deutlich schneller
+- Vignette aus eigener Praxis: zwei Ausschreibungen in den letzten 12 Monaten, KI zum Zusammenfassen genutzt — nicht falscher als ich selbst, aber deutlich schneller
 - Diese Rahmung entwaffnet später die typischen „KI könnte doch falsch liegen"-Reflexe
 
 ---
@@ -84,35 +84,25 @@ Für die Umsetzung in PowerPoint. Zielgruppe: Software-Architekt:innen im Live-V
 Untertitel: **Kein Router. Kein Hochglanz-Stack. Eine bewusste Wahl pro Fall.**
 
 **Speaker Notes (~75 s):**
-- Das ist das Kernframework des Talks — kurz und deutlich vorstellen
-- Drei Achsen: Schutzbedarf, Qualitätsbedarf, Kontextlänge
+- Kernframework — Achsen: Schutzbedarf, Qualitätsbedarf, Kontextlänge
 - Take-away-Merksatz: „Wähle das **stärkste** Modell, das der Schutzbedarf zulässt"
 
 ---
 
 ## Folie 6 — Ökosystem der EU-/DE-Anbieter
 
-**Layout:** Titel + drei Boxen nebeneinander
+**Layout:** Titel + drei Anbieter-Namen groß, jeweils zwei Zeilen Kürzest-Erklärung
 **Inhalt:**
 
-**Stackit** (Schwarz-Gruppe, DE)
-- Managed OpenAI-kompatible API, BSI-C5, PhariaAI integriert
-- Reifster voll deutscher Stack — aber ohne eigenes Frontier-Modell
+**Stackit** (DE) — voll deutscher Managed-Stack, BSI-C5, kein eigenes Frontier-Modell
+**IONOS AI Model Hub** (DE) — zweiter deutscher Player, Open-Weight-Modelle
+**Mistral la Plateforme** (FR) — einziger Frontier-Provider mit EU-Residency
 
-**IONOS AI Model Hub** (Karlsruhe, DE)
-- DE-RZ, DSGVO, Open-Weight-Modelle, Vector-DB integriert
-- Zweiter ernstzunehmender deutscher Player
+Untertitel: **In DE gibt es aktuell keinen 1:1-Frontier-Ersatz.**
 
-**Mistral la Plateforme** (Paris, FR)
-- Einziger Frontier-fähiger Provider mit End-to-End-EU-Residency
-- Für echte Frontier-Qualität in der EU aktuell alternativlos
-
-Unter der letzten Box, kleiner: **In DE gibt es aktuell keinen 1:1-Frontier-Ersatz. Ehrlich benennen.**
-
-**Speaker Notes (~75 s):**
-- Kurz erwähnen, dass das nur die Praxis-Kandidaten sind, nicht die vollständige Liste
-- Ausblick T-Systems SOOFI (eigenes ~100B-EU-LLM im Aufbau)
-- Warnung ohne Namen: „Manche ‚deutsche KI-Plattformen' leiten im Kleingedruckten auf Azure OpenAI Frankfurt um" — immer nach Inferenz-Backend und Vertragspartner fragen
+**Speaker Notes (~50 s):**
+- Nur die drei Namen als Beispiele, nicht die vollständige Liste
+- Kurzer Warnhinweis: „Manche ‚deutsche KI-Plattformen' leiten im Kleingedruckten auf Azure OpenAI Frankfurt um — immer nach Inferenz-Backend und Vertragspartner fragen"
 
 ---
 
@@ -122,30 +112,53 @@ Unter der letzten Box, kleiner: **In DE gibt es aktuell keinen 1:1-Frontier-Ersa
 **Inhalt (mittig, groß):**
 > Die Modellwahl ist nicht der Engpass. Der Engpass ist der Kontext.
 
-**Speaker Notes (~45 s):**
+**Speaker Notes (~40 s):**
 - Diesen Satz betont vorlesen
-- Kurzer Legitimations-Verweis: „Das ist keine Nischenbeobachtung — die CaSE-Podcast-Episode ‚Agent Harness, State of Play, Risk and AI Company Culture' bringt genau denselben Punkt als **Context Engineering: The Real Lever** auf den Punkt."
-- Zum nächsten Teil überleiten: „Ich zeige das an einer echten öffentlichen Ausschreibung."
+- Legitimations-Verweis: „Das ist keine Nischenbeobachtung — die CaSE-Podcast-Episode ‚Agent Harness, State of Play, Risk and AI Company Culture' bringt genau denselben Punkt als **Context Engineering: The Real Lever** auf den Punkt."
 - Kurz FITKO-Vergabe einordnen: 30 Vergabedokumente, Rahmenvertrag Projekt-/Produktberatung, 254 Mio €, 8 Fachdisziplinen inklusive Enterprise-Architektur und Software-Engineering
 
 ---
 
-## Folie 8 — Video: „Alles reinwerfen" scheitert (Szene 03)
+## Folie 8 — Das Setup: Aufbereitung als Pipeline
 
-**Layout:** Video-Vollflächen-Einbettung
+**Layout:** Titel + Diagramm mit zwei Spuren
 **Inhalt:**
-- Eingebettetes Video: [videos/03-ask-raw-fail.mov](videos/03-ask-raw-fail.mov)
-- Kleiner Titel oben rechts: *30 rohe PDFs an das Modell*
 
-**Speaker Notes (~50 s):**
-- Kurz einleiten: „Was passiert, wenn ich alle 30 PDFs direkt an das Frontier-Modell schicke?"
-- Video anspielen (~5 s)
-- Beim HTTP 400 stehen bleiben, laut vorlesen: „192.001 Tokens, Maximum 200.000, Bad Request"
-- Punkt landen: „Selbst das Frontier-Modell kann meine Halde nicht anfassen. Das ist keine Ausnahme, das ist der Normalfall bei realistischen Dokumentmengen."
+**Für PDFs — mein Setup (drei Bash-Skripte gegen die Stackit-API):**
+```
+30 PDFs ──► condense.sh ──► 30 Kondensate ──► master.sh ──► Master ──► ask.sh + Frage ──► Antwort
+              (Qwen3-VL-235B)                    (gleiches Modell)          (gleiches Modell)
+```
+
+**Für Code — fertig als Skill:**
+```
+Codebase ──► Understand-Anything ──► Knowledge Graph ──► Antwort
+```
+
+Untertitel: **Gleiches Prinzip, verschiedene Domänen. Das Werkzeug ist zweitrangig, die Aufbereitung ist der Punkt.**
+
+**Speaker Notes (~60 s):**
+- „Drei Bash-Skripte gegen die Stackit-API. Keine Frameworks, keine Router, kein Hochglanz-Stack — bewusst minimal, damit man das Prinzip sieht statt das Tooling."
+- „Für Code muss man das nicht mal selbst bauen: Understand-Anything ist ein Skill, der genau das für Codebasen macht — Files, Klassen, Beziehungen, Layer, Business-Domänen. Dazu komme ich am Ende nochmal ausführlicher zurück."
+- Zum nächsten Teil überleiten: „Was passiert, wenn man diesen Schritt weglässt? Also alle 30 PDFs direkt an das Frontier-Modell schickt?"
 
 ---
 
-## Folie 9 — Deshalb: strukturieren und kondensieren
+## Folie 9 — Video: „Alles reinwerfen" scheitert (Szene 03)
+
+**Layout:** Video-Vollflächen-Einbettung
+**Inhalt:**
+- Eingebettetes Video: [videos/03-ask-raw-fail-trim.mp4](videos/03-ask-raw-fail-trim.mp4)
+- Kleiner Titel oben rechts: *30 rohe PDFs an das Modell*
+
+**Speaker Notes (~40 s):**
+- Video anspielen (~12 s), beim HTTP 400 stehen bleiben
+- Kern laut vorlesen: „192.001 Tokens, Maximum 200.000, Bad Request"
+- „Selbst das Frontier-Modell kann meine Halde nicht anfassen. Das ist keine Ausnahme, das ist der Normalfall bei realistischen Dokumentmengen."
+
+---
+
+## Folie 10 — Deshalb: strukturieren und kondensieren
 
 **Layout:** Titel + 3 Kernaussagen als große Punkte
 **Inhalt:**
@@ -153,39 +166,55 @@ Unter der letzten Box, kleiner: **In DE gibt es aktuell keinen 1:1-Frontier-Ersa
 - **Architektonisches Arbeiten** (Trade-offs, Widersprüche, ADR-Argumente) → braucht **strukturierten, kondensierten Kontext**
 - Kontext-Aufbereitung ist der **eigentliche Wertschöpfungsschritt**, nicht die Modellwahl
 
-**Speaker Notes (~60 s):**
+**Speaker Notes (~55 s):**
 - Klar unterscheiden: „Was steht drin?" vs. „Was folgt daraus für die Architektur?"
 - Für das erste braucht's keine Kunst. Für das zweite: aufbereiten, damit das Modell Bezüge sehen kann
-- Kurzer Ausblick: „Ich zeige jetzt, wie ich das mache."
 
 ---
 
-## Folie 10 — Video: Kondensat eines Dokuments (Szene 01)
+## Folie 11 — Video: Kondensat eines Dokuments (Szene 01, mit Prompt)
 
-**Layout:** Video-Vollflächen-Einbettung
+**Layout:** Split — links Video, rechts Prompt-Auszug (Monospace, klein aber lesbar)
 **Inhalt:**
-- Eingebettetes Video: [videos/01-condense-single.mov](videos/01-condense-single.mov)
-- Kleiner Titel: *`condense.sh` auf einem PDF — Qwen3-VL-235B auf Stackit*
+
+*Links:* Eingebettetes Video [videos/01-condense-single-trim.mp4](videos/01-condense-single-trim.mp4)
+Kleiner Titel: *`condense.sh` auf einem PDF — Qwen3-VL-235B*
+
+*Rechts (Auszug aus [prompts/kondensat-system.md](prompts/kondensat-system.md)):*
+
+```markdown
+Du bist Analyst für öffentliche Vergabeunterlagen mit
+Fokus auf Software-Architektur.
+
+Regeln:
+- Nur was im Dokument steht. Keine Spekulation.
+- Jede Aussage mit Quellenverweis (Abschnitt/Seite).
+- Widersprüche explizit markieren, nicht glätten.
+
+Ausgabeformat (Markdown, feste Struktur):
+- Rolle im Verfahren
+- Kernaussagen (architekturrelevant)
+- Technologische/methodische Vorgaben
+- Nicht-funktionale Anforderungen
+- Verweise auf andere Anlagen
+- Unklarheiten und Widersprüche
+- Für die Architekturarbeit besonders relevant
+```
 
 **Speaker Notes (~60 s):**
-- Vor dem Video: „Ich fahre pro Dokument ein Aufbereitungs-Modell — hier Qwen3-VL-235B bei Stackit, souverän, in Deutschland."
-- Video läuft (~20 s)
-- Zeitanker sichtbar machen: „17 Sekunden, PDF rein, strukturiertes Markdown raus, mit Quellenverweisen."
-- Ganz kurz erwähnen: „Ich habe dasselbe für alle 30 Dokumente gemacht — insgesamt gut 5 Minuten."
+- Vor dem Video: „Aufbereitungs-Modell Qwen3-VL-235B bei Stackit, souverän, in Deutschland."
+- Prompt kurz einordnen: „System-Prompt, ehrlich gehalten — keine Kunst, feste Struktur, Quellenverweise verpflichtend."
+- Video läuft (~30 s), Zeitanker: „~17 Sekunden pro Dokument. Insgesamt 5 Minuten für alle 30."
 
 ---
 
-## Folie 11 — So sieht ein Kondensat aus
+## Folie 12 — So sieht ein Kondensat aus
 
 **Layout:** Titel + Markdown-Ausschnitt (großer Font)
 **Inhalt:**
 
 ```markdown
 # 1_Leistungsbeschreibung_v.1.0.pdf
-
-## Rolle im Verfahren
-Leistungsbeschreibung zur Rahmenvereinbarung FITKO/2026/0039.
-Definiert Leistungsumfang, Rollen und Zusammenarbeit.
 
 ## Kernaussagen (architekturrelevant)
 - Enterprise- und Lösungsarchitektur als eigenständige
@@ -198,28 +227,71 @@ Definiert Leistungsumfang, Rollen und Zusammenarbeit.
 - Widerspruch: Nicht-Eingliederung (§2.3) vs. Präsenzpflicht (§9.1)
 ```
 
-**Speaker Notes (~50 s):**
-- Feste Struktur: Rolle, Kernaussagen, Vorgaben, NFRs, Verweise, Unklarheiten, architekturrelevante Prioritäten
-- Alle Aussagen mit Quellenverweis — für den späteren Master-Merge und für nachvollziehbare Antworten
-- „Und ja, hier findet das Modell auch schon Widersprüche innerhalb eines einzelnen Dokuments."
+**Speaker Notes (~45 s):**
+- Feste Struktur, alle Aussagen mit Quellenverweis
+- „Das Modell findet Widersprüche schon innerhalb eines Dokuments — die Basis für den nächsten Schritt."
 
 ---
 
-## Folie 12 — Video: Frage an den aufbereiteten Kontext (Szene 02)
+## Folie 13 — Video: Frage an den aufbereiteten Kontext (Szene 02, mit Prompt)
 
-**Layout:** Video-Vollflächen-Einbettung
+**Layout:** Split — links Video, rechts Frage-Auszug
 **Inhalt:**
-- Eingebettetes Video: [videos/02-ask-master.mov](videos/02-ask-master.mov)
-- Kleiner Titel: *„Welche technologischen Vorgaben beeinflussen die Architektur?"*
 
-**Speaker Notes (~65 s):**
-- Video läuft (~25 s)
-- Zeitanker: „25 Sekunden für die Antwort, gegen einen kondensierten Master-Kontext von 2200 Wörtern — statt der 130.000+ Tokens aus den rohen PDFs."
-- „Und die Antwort ist präzise, mit Quellen, differenziert nach explizit und implizit."
+*Links:* Eingebettetes Video [videos/02-ask-master-trim.mp4](videos/02-ask-master-trim.mp4)
+Kleiner Titel: *`ask.sh` mit Master-Kontext*
+
+*Rechts (Auszug aus [prompts/fragen/f1-technologische-vorgaben.md](prompts/fragen/f1-technologische-vorgaben.md)):*
+
+```markdown
+Gibt es Vorgaben zu Technologien, Frameworks, Standards,
+Programmiersprachen oder Cloud-/Hosting-Anbietern, die die
+zu erbringende Architektur beeinflussen?
+
+Trenne klar:
+- Explizite Vorgaben (wird ausdrücklich gefordert)
+- Implizite Vorgaben (ergibt sich zwingend aus Kontext,
+  Standards, Verweisen, Bewertungskriterien)
+
+Falls in einer Kategorie keine Vorgaben zu finden sind,
+sag das explizit.
+```
+
+**Speaker Notes (~60 s):**
+- „Frage ist bewusst so formuliert, dass das Modell zwischen explizit und implizit unterscheiden muss."
+- Video läuft (~37 s), Zeitanker: „25 Sekunden für die Antwort, gegen einen kondensierten Master-Kontext — statt der 130.000+ Tokens aus den rohen PDFs."
 
 ---
 
-## Folie 13 — Was rauskommt: harte Funde
+## Folie 14 — Und das kommt raus (Ergebnis-Auszug)
+
+**Layout:** Titel + Markdown-Ausschnitt aus der tatsächlichen Antwort (große Type)
+**Inhalt (Auszug aus [demo-material/antworten/f1-technologische-vorgaben__master.md](demo-material/antworten/f1-technologische-vorgaben__master.md)):**
+
+```markdown
+## Explizite Vorgaben
+
+**Keine expliziten Vorgaben** zu Programmiersprachen,
+Cloud-Anbietern oder Plattformen.
+
+## Implizite Vorgaben — aus Standards und Frameworks
+
+**Architekturmethoden**: TOGAF, ArchiMate, C4-Modell,
+Domain-Driven Design, iSAQB, arc42, UML, BPMN [§6.2.1, §10.2.2]
+→ Architektur muss dokumentiert und nachvollziehbar sein
+
+**Sicherheit & Compliance**: BSI IT-Grundschutz, ISO 27001,
+C5, NIS2, Zero-Trust, Security-by-Design [§6.2.1.5, §10.2.2]
+→ Security-Konzepte müssen mitgeliefert werden
+```
+
+**Speaker Notes (~60 s):**
+- Sichtbar machen: „Das Modell hat nicht nur eine Liste ausgespuckt — es hat sie architektonisch strukturiert. Explizit vs. implizit. Und jede Aussage hat einen Quellenverweis."
+- Kritischer Punkt: „Keine erfundenen Frameworks, keine ‚das sollte man auch nehmen'-Ergänzungen aus dem Trainingskorpus. Nur was aus der Ausschreibung ableitbar ist."
+
+---
+
+## Folie 15 — Was rauskommt aus 30 Kondensaten
 
 **Layout:** Titel + 4 Aufzählungspunkte mit fetten Highlights
 **Inhalt:**
@@ -228,80 +300,70 @@ Definiert Leistungsumfang, Rollen und Zusammenarbeit.
 - **10 fundamentale Architekturfragen**, die die Ausschreibung selbst **nicht beantwortet** (Programmiersprachen, Cloud-Provider, Datenmodelle, Schnittstellen …)
 - **4 harte Widersprüche zwischen Anlagen** — Referenzzählung, Definitionslücken
 - **Genutzte Standards und Frameworks** vollständig gebündelt: TOGAF, ArchiMate, C4, DDD, iSAQB, arc42, BSI-Grundschutz, ISO 27001, C5, XÖV, XZuFi, OSCI
-- **Falsch-Positiv gefunden:** VZÄ als „unklar" markiert — obwohl Standardbegriff. **Genau warum menschlicher Lektorlauf bleibt.**
+- **Falsch-Positiv gefunden:** VZÄ als „unklar" markiert — obwohl Standardbegriff. **Warum menschlicher Lektorlauf bleibt.**
 
-**Speaker Notes (~75 s):**
-- Der 10-Fragen-Punkt ist der Wow: die KI zeigt, was in der Ausschreibung **fehlt**. Das ist Architektenarbeit auf hohem Niveau
-- Bei VZÄ betonen: Modell ist domänenfremd, kennt den Begriff nicht als Standard → markiert als Grauzone. Menschlicher Reviewer streicht das mit einem Federstrich
-- „Die Ehrlichkeit dieses Falls ist der Vortragskern. KI liefert, aber sie liefert nicht perfekt. Menschlicher Review bleibt zwingend."
-
----
-
-## Folie 14 — Dasselbe Prinzip für Code: Understand-Anything
-
-**Layout:** Titel + zwei-Spalten. Links: kurzer Text. Rechts: ein Bild oder simple Graph-Skizze (Knoten/Kanten)
-**Inhalt (links, Text):**
-
-**Wir haben's für Vergabe-PDFs gebaut.**
-**Dasselbe Prinzip trägt für Code.**
-
-- Aus einer Codebase entsteht ein **Knowledge Graph**: Dateien, Klassen, Funktionen, Import-Beziehungen, Architektur-Layer, Business-Domänen
-- KI (und Mensch) haben dann **strukturierten, navigierbaren Kontext** statt Wildwuchs-Repository
-- Anwendungen: Onboarding, Diff-Review, Domänen-Explanation, Architektur-Karte
-
-**Rechts (Graph-Skizze):** Ein paar Knoten (Files / Klassen), gerichtete Kanten (imports / calls), gruppiert in Layer-Boxen (Domain / Application / Infrastructure). Nicht ausgearbeitet — nur symbolisch.
-
-Untertitel unten: **Understand-Anything — genauso wie hier: aus roher Materie ein Kondensat, das die KI trägt.**
-
-**Speaker Notes (~75 s):**
-- Kernaussage explizit machen: „Was ich heute an Vergabeunterlagen gezeigt habe, ist kein Sonderfall. Es ist ein Muster."
-- Understand-Anything als konkretes Werkzeug: „Für Code gibt es das schon fertig als Skill — man kippt eine Codebase rein, bekommt einen navigierbaren Knowledge Graph mit Architektur-Layern, Import-Beziehungen und Business-Domänen zurück."
-- Konkrete Sub-Skills nennen: understand, understand-diff, understand-onboard, understand-domain — deckt Alltagsfragen ab
-- Kurze Andockung: „Ich nutze das selbst, wenn ich in eine unbekannte Codebase reinmuss. Das Prinzip ist dasselbe wie heute — nur ist die Rohmaterie Code statt PDFs."
-- **Souveränitäts-Bogen schließen:** „Understand-Anything ist ein Skill — mit einem Coding-Harness betrieben, der eigengehostete LLMs versteht, lässt sich das komplett auf souveräner Infrastruktur fahren. Also nicht ‚KI-Souveränität nur für Vergabeanalyse', sondern auch für Alltagsarbeit am Code."
+**Speaker Notes (~70 s):**
+- Der 10-Fragen-Punkt ist der Wow: die KI zeigt, was in der Ausschreibung **fehlt**
+- Bei VZÄ: Modell ist domänenfremd, kennt den Begriff nicht als Standard → markiert als Grauzone
+- „KI liefert, aber sie liefert nicht perfekt. Menschlicher Review bleibt zwingend."
 
 ---
 
-## Folie 15 — Fallstricke — und wie man sie umgeht
+## Folie 16 — Understand-Anything im Detail
+
+**Layout:** Titel + zwei-Spalten
+**Inhalt (links):**
+- Codebase rein → **Knowledge Graph**: Dateien, Klassen, Funktionen, Imports, Layer, Business-Domänen
+- Sub-Skills für Alltagsfragen: **understand, understand-diff, understand-onboard, understand-domain**
+
+**Inhalt (rechts, Graph-Skizze):** Ein paar Knoten (Files / Klassen), gerichtete Kanten, gruppiert in Layer-Boxen. Symbolisch.
+
+Untertitel: **Mit einem Coding-Harness gegen eigengehostete LLMs → komplett auf souveräner Infrastruktur.**
+
+**Speaker Notes (~55 s):**
+- Kurze Konkretisierung: „Für Code muss ich das Prinzip nicht selbst nachbauen — Understand-Anything liefert das fertig."
+- Souveränitäts-Bogen: „Und mit einem Coding-Harness, der eigengehostete LLMs versteht, lässt sich das komplett auf der eigenen Infrastruktur betreiben — Alltagsarbeit am Code auf souveränem Setup."
+
+---
+
+## Folie 17 — Fallstricke — und wie man sie umgeht
 
 **Layout:** Tabelle (dreispaltig): Fallstrick / Was passiert / Gegenmittel
 **Inhalt:**
 
 | Fallstrick | Was passiert | Gegenmittel |
 |---|---|---|
-| Kontextlänge zu kurz | 40-Seiten-Doc passt lokal nicht | Frontier-Modelle mit 200k+ Kontext; für lokal: dealbreaker → hochstufen |
-| Zu höfliches Modell | Stimmt zu, statt zu widersprechen | System-Prompt auf Ehrlichkeit trimmen, Rollenwechsel |
-| Halluzinierte Referenzen | Erfindet Patterns, Bibliotheken, URLs | Pflichtreferenzen, Lektorlauf mit Prüf-Prompt |
-| Overconfidence bei Domänen | Wirkt sicher, wo Wissen fehlt | Belege einfordern, Lektorlauf „was ist unbelegt?" |
-| Fehlendes Fachvokabular | Standardbegriffe als „unklar" markieren (VZÄ!) | Menschlicher Lektor, Domänenwissen bleibt beim Menschen |
+| Kontextlänge zu kurz | 40-Seiten-Doc passt lokal nicht | Frontier mit 200k+; lokal: hochstufen |
+| Zu höfliches Modell | Stimmt zu, statt zu widersprechen | Prompt auf Ehrlichkeit trimmen, Rollenwechsel |
+| Halluzinierte Referenzen | Erfindet Patterns, URLs, Bibliotheken | Pflichtreferenzen, Lektorlauf mit Prüf-Prompt |
+| Overconfidence bei Domänen | Wirkt sicher, wo Wissen fehlt | Belege einfordern, „was ist unbelegt?"-Prompt |
+| Fehlendes Fachvokabular | Standardbegriffe als „unklar" (VZÄ!) | Menschlicher Lektor — Domänenwissen beim Menschen |
 
-Untertitel: **Fast alles ist mit Prompt-Disziplin lösbar. Harte Grenze: Modellgröße bei lokalen Setups.**
+Untertitel: **Fast alles lösbar mit Prompt-Disziplin. Harte Grenze: Modellgröße bei lokalen Setups.**
 
-**Speaker Notes (~70 s):**
-- Kurz durch die Tabelle gehen, Highlight auf die letzten beiden Zeilen
-- VZÄ konkret aus unserem Master zeigen (wenn Zeit: kurz mündlich, sonst nur erwähnen)
-- Kernbotschaft: „Das sind Fallstricke, keine Sackgassen"
+**Speaker Notes (~55 s):**
+- Kurz durch die Tabelle, Highlight auf die letzten beiden Zeilen
+- „Das sind Fallstricke, keine Sackgassen"
 
 ---
 
-## Folie 16 — Video: Lokale Modelle — 8B vs. 14B (Szenen 04 + 05)
+## Folie 18 — Video: Lokale Modelle — 8B vs. 14B (Szenen 04 + 05)
 
 **Layout:** Zwei Videos nebeneinander oder Split-Screen
 **Inhalt:**
-- Links: [videos/04-ask-local-8b.mov](videos/04-ask-local-8b.mov) — *qwen3:8b lokal auf M3*
-- Rechts: [videos/05-ask-local-14b.mov](videos/05-ask-local-14b.mov) — *qwen3:14b lokal auf M3*
-- Untertitel unten: **Gleiche Frage, gleicher Kontext, unterschiedliche Modellgrößen. ~4 vs. ~5 Minuten.**
+- Links: [videos/04-ask-local-8b-trim.mp4](videos/04-ask-local-8b-trim.mp4) — *qwen3:8b lokal auf M3*
+- Rechts: [videos/05-ask-local-14b-trim.mp4](videos/05-ask-local-14b-trim.mp4) — *qwen3:14b lokal auf M3*
+- Untertitel: **Gleiche Frage, gleicher Kontext, unterschiedliche Modellgrößen. Wartezeit im Video 8x beschleunigt.**
 
-**Speaker Notes (~65 s):**
-- Auf den Zeitraffer hinweisen (Videos werden auf ~30 s beschleunigt gezeigt)
-- Vergleich zur Stackit-Antwort (25 s): „Faktor 8–10 langsamer, deutlich kleineres Modell — aber es läuft komplett offline"
-- Take-away hier: „Für Inhalte, die nicht raus dürfen, ist das der Preis. Und der Preis ist zahlbar."
+**Speaker Notes (~60 s):**
+- Vergleich zur Stackit-Antwort (25 s): „Faktor 8–10 langsamer, deutlich kleineres Modell — aber komplett offline"
+- Take-away: „Für Inhalte, die nicht raus dürfen, ist das der Preis. Und der Preis ist zahlbar."
 
 ---
 
-## Folie 17 — Halluzinationen live gefangen
+## Folie 19 — Halluzinationen live gefangen
 
-**Layout:** Titel + Code-Screenshot mit sichtbar rot hervorgehobenen Halluzinationen
+**Layout:** Titel + Code-Screenshot mit rot markierten Halluzinationen
 **Inhalt (Ausschnitt aus [demo-material/antworten/f1-…__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md)):**
 
 ```markdown
@@ -316,14 +378,13 @@ Rot markiert: `https://example.com/…` — 10 Mal.
 
 Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 
-**Speaker Notes (~60 s):**
-- Direkt sagen: „Das Video davor lief sauber. In diesem Lauf hat dasselbe Modell 10 URLs erfunden."
-- Betonen: „Mal ja, mal nein. Genau das ist das Problem — nicht dass die URLs kommen, sondern dass du es beim nächsten Lauf nicht siehst."
-- Zurückverweisen auf Fallstricke-Tabelle: „Genau deshalb: Lektorlauf zwingend."
+**Speaker Notes (~55 s):**
+- „Das Video davor lief sauber. In diesem Lauf hat dasselbe Modell 10 URLs erfunden."
+- „Mal ja, mal nein. Das Problem ist nicht dass die URLs kommen, sondern dass du es beim nächsten Lauf nicht siehst."
 
 ---
 
-## Folie 18 — Was du mitnimmst
+## Folie 20 — Was du mitnimmst
 
 **Layout:** Titel + 4 klare Punkte, große Typografie
 **Inhalt:**
@@ -334,36 +395,34 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 - **LLM als Sparringspartner**, nicht als Entscheider — die Verantwortung bleibt beim Architekten
 
 **Speaker Notes (~45 s):**
-- Vier Sätze, jeder einzeln kurz durchgehen, nichts weiter dazusagen
+- Vier Sätze, jeder einzeln kurz durchgehen
 - Puffer für Übergang zu Kontakt / Q&A
 
 ---
 
-## Folie 19 — Kontakt & weiterführend
+## Folie 21 — Kontakt & weiterführend
 
 **Layout:** Titel + zwei Blöcke (Kontakt / Repo)
 **Inhalt:**
 
 **Kontakt**
-- Patrick Cornelißen
-- Atvantage
+- Patrick Cornelißen · Atvantage
 - LinkedIn / E-Mail (konkret einfügen)
 
 **Alles zum Nachbauen**
 - GitHub-Repo (Link einfügen, sobald public)
-- Enthält Skripte, Prompts, Kondensate, Antworten und die Videos
+- Enthält Skripte, Prompts, Kondensate, Antworten, Videos
 - Original-PDFs zieht man selbst mit `./scripts/download-fitko.sh`
 
 **Weiterführend**
 - CaSE Podcast, Episode 62 — *„Agent Harness, State of Play, Risk and AI Company Culture"* (case-podcast.org)
-- **arc42** Skill — dieselbe Kondensations-Idee für Architekturdokumentation
-- **Understand-Anything** — dasselbe Prinzip für Code: Knowledge Graph aus einer Codebase, mit dem die KI dann arbeitet
+- arc42 Skill — dieselbe Kondensations-Idee für Architekturdokumentation
+- Understand-Anything — für Code
 
 **Am Ende:** *Fragen?*
 
 **Speaker Notes (~30 s + Q&A):**
-- Q&A-Slot (5 Min): auf vorbereitete Fragen aus [01-talking-points.md](01-talking-points.md) achten (Hardware, EU-Anbieter, RAG, Codegen, Compliance, Zeitersparnis)
-- Nicht ausschweifen — Antworten kurz und präzise halten
+- Q&A-Slot (5 Min): vorbereitete Fragen aus [01-talking-points.md](01-talking-points.md) parat
 
 ---
 
@@ -376,27 +435,30 @@ Untertitel: **`qwen3:8b`, ein Lauf von dreien. Nicht-deterministisch.**
 | 3 | Wer da vorne redet | 25 s | — | 1:40 |
 | 4 | Baseline | 60 s | — | 2:40 |
 | 5 | Entscheidungsraster | 75 s | — | 3:55 |
-| 6 | Ökosystem-Anbieter | 75 s | — | 5:10 |
-| 7 | Übergang: Kontext ist die Arbeit | 45 s | — | 5:55 |
-| 8 | Video: raw-fail | 50 s | ~5 s | 6:50 |
-| 9 | Deshalb strukturieren | 60 s | — | 7:50 |
-| 10 | Video: condense-single | 60 s | ~20 s | 9:10 |
-| 11 | Kondensat-Struktur | 50 s | — | 10:00 |
-| 12 | Video: ask-master | 65 s | ~25 s | 11:30 |
-| 13 | Harte Funde | 75 s | — | 12:45 |
-| 14 | **Prinzip für Code: Understand-Anything** | 75 s | — | 14:00 |
-| 15 | Fallstricke-Tabelle | 70 s | — | 15:10 |
-| 16 | Video: 8b vs. 14b | 65 s | ~60 s Zeitraffer | 17:15 |
-| 17 | Halluzinationen live gefangen | 60 s | — | 18:15 |
-| 18 | Take-aways | 45 s | — | 19:00 |
-| 19 | Kontakt | 30 s | — | 19:30 |
+| 6 | Ökosystem-Anbieter | 50 s | — | 4:45 |
+| 7 | Übergang: Kontext ist die Arbeit | 40 s | — | 5:25 |
+| 8 | **Setup: Aufbereitung als Pipeline** | 60 s | — | 6:25 |
+| 9 | Video: raw-fail | 40 s | ~12 s | 7:05 |
+| 10 | Deshalb strukturieren | 55 s | — | 8:00 |
+| 11 | Video condense + Prompt (Split) | 60 s | ~30 s | 9:00 |
+| 12 | Kondensat-Struktur | 45 s | — | 9:45 |
+| 13 | Video ask-master + Frage (Split) | 60 s | ~37 s | 10:45 |
+| 14 | **Und das kommt raus** | 60 s | — | 11:45 |
+| 15 | Harte Funde (30 Kondensate) | 70 s | — | 12:55 |
+| 16 | Understand-Anything im Detail | 55 s | — | 13:50 |
+| 17 | Fallstricke-Tabelle | 55 s | — | 14:45 |
+| 18 | Video: 8b vs. 14b | 60 s | ~52 s Zeitraffer | 15:45 |
+| 19 | Halluzinationen live gefangen | 55 s | — | 16:40 |
+| 20 | Take-aways | 45 s | — | 17:25 |
+| 21 | Kontakt | 30 s | — | 17:55 |
 
-**Ergebnis: ~19:30 Vortrag + 0:30 Puffer → passt gerade in die 20 Min. Wenig Reserve, dafür ist die neue Folie 14 drin.**
+**Ergebnis: ~17:55 Sprech-Vorschlag + Puffer für Übergänge, Nachdenken, atmen → passt sicher in 20 Min.**
+(Die Video-Zeiten sind in den Sprech-Zeiten integriert, da meist parallel kommentiert wird.)
 
 Wenn's eng wird, kürzt du in dieser Reihenfolge:
-1. Folie 15 (Fallstricke-Tabelle) — kurzer mündlicher Verweis reicht
-2. Folie 9 (Deshalb strukturieren) — mündlich neben Video 8 einbauen
-3. Folie 11 (Kondensat-Struktur) — mündlich neben Video 10 abhandeln
+1. Folie 17 (Fallstricke-Tabelle) — kurzer mündlicher Verweis reicht
+2. Folie 10 (Deshalb strukturieren) — Aussage aus Folie 8 herüberziehen
+3. Folie 12 (Kondensat-Struktur) — mündlich neben Folie 11 abhandeln
 
 ---
 
@@ -407,13 +469,15 @@ Wenn's eng wird, kürzt du in dieser Reihenfolge:
 | 4 | [02-beispiele-und-vignetten.md](02-beispiele-und-vignetten.md) — Vignette 1 |
 | 5 | [01-talking-points.md](01-talking-points.md) Block 2 |
 | 6 | [04-eu-anbieter.md](04-eu-anbieter.md) |
-| 8 | [videos/03-ask-raw-fail.mov](videos/03-ask-raw-fail.mov) |
-| 10 | [videos/01-condense-single.mov](videos/01-condense-single.mov) |
-| 11 | [demo-material/fitko-kondensat/1_Leistungsbeschreibung_v.1.0.md](demo-material/fitko-kondensat/1_Leistungsbeschreibung_v.1.0.md) |
-| 12 | [videos/02-ask-master.mov](videos/02-ask-master.mov) |
-| 13 | [demo-material/fitko-master.md](demo-material/fitko-master.md), [demo-material/antworten/f3-widersprueche__kondensat.md](demo-material/antworten/f3-widersprueche__kondensat.md) |
-| 14 | Understand-Anything (Skill) — mit einem Coding-Harness gegen eigengehostete LLMs betreibbar |
-| 15 | [01-talking-points.md](01-talking-points.md) Block 5 |
-| 16 | [videos/04-ask-local-8b.mov](videos/04-ask-local-8b.mov), [videos/05-ask-local-14b.mov](videos/05-ask-local-14b.mov) |
-| 17 | [demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md) |
-| 18 | [01-talking-points.md](01-talking-points.md) Block 6 |
+| 8 | [scripts/condense.sh](scripts/condense.sh), [master.sh](scripts/master.sh), [ask.sh](scripts/ask.sh), Understand-Anything (Skill) |
+| 9 | [videos/03-ask-raw-fail-trim.mp4](videos/03-ask-raw-fail-trim.mp4) |
+| 11 | [videos/01-condense-single-trim.mp4](videos/01-condense-single-trim.mp4), [prompts/kondensat-system.md](prompts/kondensat-system.md) |
+| 12 | [demo-material/fitko-kondensat/1_Leistungsbeschreibung_v.1.0.md](demo-material/fitko-kondensat/1_Leistungsbeschreibung_v.1.0.md) |
+| 13 | [videos/02-ask-master-trim.mp4](videos/02-ask-master-trim.mp4), [prompts/fragen/f1-technologische-vorgaben.md](prompts/fragen/f1-technologische-vorgaben.md) |
+| 14 | [demo-material/antworten/f1-technologische-vorgaben__master.md](demo-material/antworten/f1-technologische-vorgaben__master.md) |
+| 15 | [demo-material/fitko-master.md](demo-material/fitko-master.md), [demo-material/antworten/f3-widersprueche__kondensat.md](demo-material/antworten/f3-widersprueche__kondensat.md) |
+| 16 | Understand-Anything (Skill) — mit einem Coding-Harness gegen eigengehostete LLMs betreibbar |
+| 17 | [01-talking-points.md](01-talking-points.md) Block 5 |
+| 18 | [videos/04-ask-local-8b-trim.mp4](videos/04-ask-local-8b-trim.mp4), [videos/05-ask-local-14b-trim.mp4](videos/05-ask-local-14b-trim.mp4) |
+| 19 | [demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md) |
+| 20 | [01-talking-points.md](01-talking-points.md) Block 6 |
