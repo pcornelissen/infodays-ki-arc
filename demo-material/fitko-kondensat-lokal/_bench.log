@@ -1,0 +1,10 @@
+== 2026-10-05 09:03:31 == condense-local start
+    file : demo-material/fitko/1_Leistungsbeschreibung_v.1.0.pdf
+    model: qwen3:14b (lokal via Ollama)
+    tokens: in=27733 out=1614
+[+443.0s] fertig
+
+VERGLEICH:
+  Stackit (Qwen3-VL-235B): ~17s (Video)
+  Lokal (qwen3:14b, M3):  443.0s
+  Faktor: 26.1x langsamer
