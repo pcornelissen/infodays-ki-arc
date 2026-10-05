@@ -81,34 +81,18 @@ Das ist auch ein Meta-Bonus für den Vortrag: **KI bereitet den Kontext für KI 
 - [x] Master-Dokument aus Einzelkondensaten synthetisiert
 - [x] Vier Fragen (F1–F4) formuliert und je gegen `kondensat` + `master` durchgespielt
 - [x] Roh-Modus bewusst als 400-Fail dokumentiert (Kontextfenster überschritten)
-- [ ] Antworten inhaltlich sichten und für jede Frage entscheiden: welcher Modus liefert den stärksten Aha-Effekt für den Vortrag?
-- [ ] Demo-Modell lokal auswählen: Mistral (aktuell), Qwen kleiner (Kontinuität zur Aufbereitung)
+- [x] Antworten gesichtet, F1-Master-Antwort als Video + Folien-Ausschnitt gewählt
+- [x] Demo-Modell lokal: qwen3:8b + qwen3:14b (Kontinuität zur Aufbereitung via Qwen-Familie)
 
-## Aufnahme-Todos (das Video)
+## Umsetzung im Deck
 
-Alle Schritte müssen für den Vortrag aufgenommen werden. Das Produktions-Kondensat oben nutzen wir für die spätere Master-Analyse; für die eigentliche Video-Demo werden die relevanten Schritte separat gefilmt.
+- [x] Aufnahme: `condense.sh` auf einem einzelnen Dokument (Folie 10, media2)
+- [x] Aufnahme: `master.sh` auf 30 Kondensaten (Folie 13, media3)
+- [x] Aufnahme: `ask.sh --mode master` mit F1 (Folie 16, media4)
+- [x] Aufnahme: `ask.sh --mode roh` mit F1 — 400-Fail als Belegstelle (Folie 7, media1)
+- [x] Aufnahme: lokal qwen3:8b und qwen3:14b, gleiche Frage (Folie 19, media5 + media6)
+- [x] Alle Videos auf 7–11 s beschleunigt (Live-Wartezeit stark komprimiert, Ende normal für sichtbares „fertig →")
+- [x] Halluzinations-Datei separat gesichert ([f1-…__local_qwen3_8b_master__halluzination.md](demo-material/antworten/f1-technologische-vorgaben__local_qwen3_8b_master__halluzination.md)) — als Backup falls Live-Modell im Vortrag diesmal sauber antwortet
+- [x] Benchmark „Stackit vs. lokal" (17 s vs. 443 s pro Dokument) als Textblock auf Folie 10
 
-- [ ] Aufnahme 1: `condense.sh` auf einem einzelnen Dokument (Leistungsbeschreibung) — zeigt die Bühne (Zeitmarken, Modell-Namen)
-- [ ] Aufnahme 2: die `for`-Schleife über alle PDFs — im Zeitraffer schön anzusehen
-- [ ] Aufnahme 3: Master-Merge / Analyse-Prompt auf dem Kondensat — der eigentliche Wert
-- [ ] Aufnahme 4a: F1 oder F2 (siehe oben) — roh vs. aufbereitet
-- [ ] Aufnahme 4b: F3 oder F4 — roh vs. aufbereitet
-- [ ] Sichten, straffen, im Video-Playback auf sinnvolle Geschwindigkeit bringen (Zeitmarken bleiben lesbar)
-- [ ] F1 aufnehmen: roh
-- [ ] F1 aufnehmen: aufbereitet
-- [ ] F2 aufnehmen: roh
-- [ ] F2 aufnehmen: aufbereitet
-- [ ] F3 aufnehmen: roh
-- [ ] F3 aufnehmen: aufbereitet
-- [ ] F4 aufnehmen: roh
-- [ ] F4 aufnehmen: aufbereitet
-- [ ] Sichten, Paar auswählen, straffen auf ~4 Min
-- [ ] Alternativpaar als Reserve markieren
-
----
-
-## Offene Punkte
-
-- [ ] Welches lokale Modell für die Aufnahme? Vermutlich Mistral (aktuell) plus Qwen als Vergleich für die Kontext-/Qualitäts-Aussage
-- [ ] Wie sieht der "aufbereitete Kontext" konkret aus? Format? Werkzeug zur Aufbereitung?
-- [ ] Bewusste Auswahl der Modelle für Vorher/Nachher: gleich lassen (nur Kontext-Unterschied) — sonst mischt man zwei Effekte in einer Demo
+Alles ausgeliefert in `ai-arc-vortrag.pptx`.

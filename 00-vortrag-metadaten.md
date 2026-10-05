@@ -52,11 +52,11 @@ Mitnehmen wirst du: eine ehrliche Einschätzung, wo lokale und EU-gehostete LLMs
 - Kein Router- oder Hochglanz-Stack-Werbeblock.
 - Kein abgeschlossener Erfahrungsbericht über Jahre — sondern ehrlicher Zwischenstand.
 
-## Nächste Schritte
+## Status
 
-- [ ] Talking Points strukturieren (20 Min Slot)
-- [ ] Konkrete Projekt-Beispiele auswählen (anonymisiert)
-- [ ] Entscheidungsraster als visuelles Element skizzieren
-- [ ] Prompts / Routinen sammeln, die sich bewährt haben
-- [ ] Grenzen / Anti-Beispiele sammeln
-- [ ] Foliensatz später
+- [x] Talking Points strukturiert ([01-talking-points.md](01-talking-points.md))
+- [x] Konkrete Projekt-Beispiele ausgewählt ([02-beispiele-und-vignetten.md](02-beispiele-und-vignetten.md))
+- [x] Entscheidungsraster als Folie 5 im Deck
+- [x] Prompts und Routinen gesammelt ([prompts/](prompts/))
+- [x] Grenzen und Anti-Beispiele im Deck (Folien 19–21)
+- [x] Foliensatz ausgeliefert: `ai-arc-vortrag.pptx` (22 Folien, 6 eingebettete Videos, 7.1 MB)
