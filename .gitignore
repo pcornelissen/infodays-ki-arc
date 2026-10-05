@@ -33,3 +33,6 @@ videos/_record.log
 # Python
 __pycache__/
 *.pyc
+
+# Sachsen-Fundsachen Vergabe-PDFs — selbes Argument wie bei FITKO.
+demo-material/sachsen-fundsachen/
